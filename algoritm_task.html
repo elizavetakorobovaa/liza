@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Алгоритмическая задача</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/bootstrap-reboot.css" />
+    <link rel="stylesheet" href="css/bootstrap-grid.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    
+    <script src="js/bootstrap.js"></script>
+  </head>
+  <body>
+    <header
+      class="header navbar navbar-expand-lg navbar-light bg-light fixed-top"
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand" href="./index.html">туризм.ру</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="page2.html">Волгоград</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./contact_form.html">Связь</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./dom_change.html">Чтение JS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="./algoritm_task.html">Задача</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./paseport.html">Паспорт</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="items.html">Купить тур</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <main>
+      <h2>Решение алгоритмической задачи</h2>
+      <div>
+        <div class="form-group">
+          <label class="formlabel" for="taskDescription"
+            >Описание задачи: Проходит ли коробка в дверь?
+          </label>
+        </div>
+        <div class="form-group">
+          <label class="formlabel" for="initialData"
+            >Исходные данные: Введите длину (A)
+          </label>
+          <textarea class="firstSquare" id="initialData" required></textarea>
+        </div>
+        <div class="form-group">
+          <label class="formlabel" for="initialData"
+            >Исходные данные: Введите ширину (B)
+          </label>
+          <textarea class="secondSquare" id="initialData" required></textarea>
+        </div>
+        <div class="form-group">
+          <label class="formlabel" for="initialData"
+            >Исходные данные: Введите высоту (C)
+          </label>
+          <textarea class="thirdSquare" id="initialData" required></textarea>
+        </div>
+        <div class="form-group">
+          <label class="formlabel" for="initialData"
+            >Исходные данные: Введите ширину двери (M)
+          </label>
+          <textarea class="firstSide" id="initialData" required></textarea>
+        </div>
+        <div class="form-group">
+          <label class="formlabel" for="initialData"
+            >Исходные данные: Введите высоту двери (K)
+          </label>
+          <textarea class="secondSide" id="initialData" required></textarea>
+        </div>
+        <button class="customButton" onclick="solveTask()">
+          Решить задачу
+        </button>
+      </div>
+    </main>
+    <script src="./js/algorithm.js"></script>
+  </body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/bootstrap-grid.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>dom and javascript</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/bootstrap-reboot.css" />
+    <link rel="stylesheet" href="css/bootstrap-grid.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/pasportstyle.css" />
+    <script src="js/bootstrap.js"></script>
+  </head>
+  <body>
+    <header
+      class="header navbar navbar-expand-lg navbar-light bg-light fixed-top"
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand" href="./index.html">туризм.ру</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="page2.html">Волгоград</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./contact_form.html">Связь</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./dom_change.html">Чтение JS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./algoritm_task.html">Задача</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="./paseport.html">Паспорт</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="items.html">Купить тур</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div name="governplace" class="block1">
+        УФМС РОССИИ ПО ГОР. МОСКВЕ <br />
+        ПО РАЙОНУ x
+      </div>
+      <div id="dateoutput" class="block2">29.12.2016</div>
+      <div id="code" class="block3">212-85-06</div>
+      <div id="surname" class="block4">Коробова</div>
+      <div id="firstname" class="block5">Елизавета</div>
+      <div id="paternalname" class="block6">Олеговна</div>
+      <div id="gender" class="block7">жен.</div>
+      <div id="birthyear" class="block8">01.12.2004</div>
+      <div id="cityofbirth" class="block9">гор.Москва</div>
+      <div class="photo">
+        <img src="./images/lanadelreypsp.jpg" height="120" width="100" />
+      </div>
+    </main>
+    <button class="customButton" onclick="changeLanguage()">
+      Перевести на латиницу
+    </button>
+    <script src="js/main.js"></script>
+  </body>
+</html>

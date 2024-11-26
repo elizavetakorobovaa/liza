@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>Расширенная форма</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header
+      class="header navbar navbar-expand-lg navbar-light bg-light fixed-top shadow-sm"
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand fw-bold" href="./index.html">Туризм.ру</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="page2.html">Волгоград</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="./contact_form.html">Связь</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./dom_change.html">Чтение JS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./algoritm_task.html">Задача</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./paseport.html">Паспорт</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="items.html">Купить тур</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <main class="container mt-5 pt-5">
+      <h1 class="text-center mb-4">Расширенная форма отправки данных</h1>
+      <form
+        action="https://www.google.com/search?"
+        name="UserEnter"
+        target="_blank"
+      >
+        <fieldset class="border p-3 rounded mb-4">
+          <legend class="fw-bold">Личные данные</legend>
+          <div class="row g-3">
+            <div class="col-md-4">
+              <label for="lastName" class="form-label">Фамилия:</label>
+              <input
+                type="text"
+                id="lastName"
+                class="form-control"
+                required
+                value="Иванов"
+              />
+            </div>
+            <div class="col-md-4">
+              <label for="firstName" class="form-label">Имя:</label>
+              <input
+                type="text"
+                id="firstName"
+                class="form-control"
+                required
+                value="Иван"
+              />
+            </div>
+            <div class="col-md-4">
+              <label for="middleName" class="form-label">Отчество:</label>
+              <input
+                type="text"
+                id="middleName"
+                class="form-control"
+                required
+                value="Иванович"
+              />
+            </div>
+          </div>
+          <div class="row g-3 mt-3">
+            <div class="col-md-6">
+              <label for="phone" class="form-label">Телефон:</label>
+              <input
+                type="tel"
+                id="phone"
+                class="form-control"
+                required
+                value="82347863456"
+              />
+            </div>
+            <div class="col-md-6">
+              <label for="email" class="form-label">Электронная почта:</label>
+              <input
+                type="email"
+                id="email"
+                class="form-control"
+                required
+                value="ivanivanovich@hse.ru"
+              />
+            </div>
+          </div>
+        </fieldset>
+
+        <fieldset class="border p-3 rounded mb-4">
+          <legend class="fw-bold">Адрес</legend>
+          <div class="row g-3">
+            <div class="col-md-4">
+              <label for="country" class="form-label">Страна:</label>
+              <input
+                type="text"
+                id="country"
+                class="form-control"
+                required
+                value="Иран"
+              />
+            </div>
+            <div class="col-md-4">
+              <label for="city" class="form-label">Город:</label>
+              <input
+                type="text"
+                id="city"
+                class="form-control"
+                required
+                value="Тегеранск"
+              />
+            </div>
+            <div class="col-md-4">
+              <label for="street" class="form-label">Улица:</label>
+              <input
+                type="text"
+                id="street"
+                class="form-control"
+                required
+                value="проспект Ленина"
+              />
+            </div>
+          </div>
+          <div class="row g-3 mt-3">
+            <div class="col-md-6">
+              <label for="house" class="form-label">Дом:</label>
+              <input
+                type="text"
+                id="house"
+                class="form-control"
+                required
+                value="1979"
+              />
+            </div>
+            <div class="col-md-6">
+              <label for="apartment" class="form-label">Квартира:</label>
+              <input
+                type="text"
+                id="apartment"
+                class="form-control"
+                required
+                value="15"
+              />
+            </div>
+          </div>
+        </fieldset>
+
+        <fieldset class="border p-3 rounded mb-4">
+          <legend class="fw-bold">Дополнительные данные</legend>
+          <div class="mb-3">
+            <label for="birthdate" class="form-label">Дата рождения:</label>
+            <input type="date" id="birthdate" class="form-control" required />
+          </div>
+          <div class="mb-3">
+            <label for="password" class="form-label">Пароль:</label>
+            <input
+              type="password"
+              id="password"
+              class="form-control"
+              required
+            />
+          </div>
+          <div class="mb-3">
+            <label class="form-label d-block">Пол:</label>
+            <div class="form-check form-check-inline">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="gender"
+                value="male"
+                checked
+              />
+              <label class="form-check-label">М</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="gender"
+                value="female"
+              />
+              <label class="form-check-label">Ж</label>
+            </div>
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              name="consent"
+              required
+              checked
+            />
+            <label class="form-check-label">Согласие на обработку данных</label>
+          </div>
+        </fieldset>
+
+        <fieldset class="border p-3 rounded mb-4">
+          <legend class="fw-bold">Интересы</legend>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              name="interests"
+              value="travel"
+              checked
+            />
+            <label class="form-check-label">Путешествия</label>
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              name="interests"
+              value="sports"
+              checked
+            />
+            <label class="form-check-label">Спорт</label>
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              name="interests"
+              value="reading"
+            />
+            <label class="form-check-label">Чтение</label>
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              name="interests"
+              value="cooking"
+            />
+            <label class="form-check-label">Кулинария</label>
+          </div>
+        </fieldset>
+
+        <fieldset class="border p-3 rounded mb-4">
+          <legend class="fw-bold">Дополнительные пожелания</legend>
+          <label for="comments" class="form-label">Комментарии:</label>
+          <textarea
+            id="comments"
+            class="form-control"
+            rows="4"
+            placeholder="Введите ваши пожелания..."
+          ></textarea>
+        </fieldset>
+
+        <button class="btn btn-primary w-100" type="submit">Отправить</button>
+      </form>
+    </main>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

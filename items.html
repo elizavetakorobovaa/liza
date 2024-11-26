@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Магазин</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/bootstrap-reboot.css" />
+    <link rel="stylesheet" href="css/bootstrap-grid.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+  </head>
+  <body>
+    <header
+      class="header navbar navbar-expand-lg navbar-light bg-light fixed-top"
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand" href="./index.html">туризм.ру</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="page2.html">Волгоград</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./contact_form.html">Связь</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./dom_change.html">Чтение JS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./algoritm_task.html">Задача</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./paseport.html">Паспорт</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="items.html">Купить тур</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <div class="container">
+      <div class="card-body">
+        <h1 class="card-title text-center">Магазин</h1>
+        <br />
+        <form
+          action="https://www.bing.com/search?"
+          id="UserEnter"
+          name="UserEnter"
+          target="_blank"
+        >
+          <input name="q" type="hidden" value="search" />
+          <ul
+            class="d-flex flex-row justify-content-around flex-wrap bg-light"
+            id="node_for_insert"
+          >
+            <li
+              style="width: 210px"
+              class="d-flex flex-column m-1 p-1 border bg-body"
+            >
+              <img
+                style="width: 180px"
+                class="align-self-center"
+                src="images/avtor-alexandr-soloviev-main___shutterstock_1056081995.xmoz4pmddweo.jpg"
+                alt="Товар 1"
+              />
+              <h5 class="card-title">Товар 1</h5>
+              <p class="card-text">Летний тур</p>
+              <input type="hidden" name="vendor_code" value="111" />
+              <p class="card-text">
+                Заказать
+                <input class="w-50" type="number" name="amount" value="0" />
+              </p>
+            </li>
+
+            <li
+              style="width: 210px"
+              class="d-flex flex-column m-1 p-1 border bg-body"
+            >
+              <img
+                style="width: 180px"
+                class="align-self-center"
+                src="images/153244-1652276408.jpg"
+                alt="Товар 2"
+              />
+              <h5 class="card-title">Товар 2</h5>
+              <p class="card-text">Майский тур</p>
+              <input type="hidden" name="vendor_code" value="222" />
+              <p class="card-text">
+                Заказать
+                <input class="w-50" type="number" name="amount" value="0" />
+              </p>
+            </li>
+
+            <li
+              style="width: 210px"
+              class="d-flex flex-column m-1 p-1 border bg-body"
+            >
+              <img
+                style="width: 180px"
+                class="align-self-center"
+                src="images/109101-2021923-12646-7wz9jv.gpucj.jpg"
+                alt="Товар 3"
+              />
+              <h5 class="card-title">Товар 3</h5>
+              <p class="card-text">Осенний тур</p>
+              <input type="hidden" name="vendor_code" value="333" />
+              <p class="card-text">
+                Заказать
+                <input class="w-50" type="number" name="amount" value="0" />
+              </p>
+            </li>
+
+            <li
+              style="width: 210px"
+              class="d-flex flex-column m-1 p-1 border bg-body"
+            >
+              <img
+                style="width: 180px"
+                class="align-self-center"
+                src="images/jpg32.jpg"
+                alt="Товар 4"
+              />
+              <h5 class="card-title">Товар 4</h5>
+              <p class="card-text">Поездка в Урюпинск</p>
+              <input type="hidden" name="vendor_code" value="4444" />
+              <p class="card-text">
+                Заказать
+                <input class="w-50" type="number" name="amount" value="0" />
+              </p>
+            </li>
+
+            <li
+              style="width: 210px"
+              class="d-flex flex-column m-1 p-1 border bg-body"
+            >
+              <img
+                style="width: 180px"
+                class="align-self-center"
+                src="images/r4ibalka-volgogradskaya-oblast-2048.jpg"
+                alt="Товар 5"
+              />
+              <h5 class="card-title">Товар 5</h5>
+              <p class="card-text">Рыбалка</p>
+              <input type="hidden" name="vendor_code" value="5555" />
+              <p class="card-text">
+                Заказать
+                <input class="w-50" type="number" name="amount" value="0" />
+              </p>
+            </li>
+
+            <li
+              style="width: 210px"
+              class="d-flex flex-column m-1 p-1 border bg-body"
+            >
+              <img
+                style="width: 180px"
+                class="align-self-center"
+                src="images/de-1200.jpg"
+                alt="Товар 6"
+              />
+              <h5 class="card-title">Товар 6</h5>
+              <p class="card-text">Тур по монастырям</p>
+              <input type="hidden" name="vendor_code" value="6666" />
+              <p class="card-text">
+                Заказать
+                <input class="w-50" type="number" name="amount" value="0" />
+              </p>
+            </li>
+
+            <li
+              style="width: 210px"
+              class="d-flex flex-column m-1 p-1 border bg-body"
+            >
+              <img
+                style="width: 180px"
+                class="align-self-center"
+                src="images/instalyatsiya_panorama_stalingradskaya_bitva_volgograd4.jpg"
+                alt="Товар 7"
+              />
+              <h5 class="card-title">Товар 7</h5>
+              <p class="card-text">Февральский тур</p>
+              <input type="hidden" name="vendor_code" value="7777" />
+              <p class="card-text">
+                Заказать
+                <input class="w-50" type="number" name="amount" value="0" />
+              </p>
+            </li>
+
+            <li
+              style="width: 210px"
+              class="d-flex flex-column m-1 p-1 border bg-body"
+            >
+              <img
+                style="width: 180px"
+                class="align-self-center"
+                src="images/148795-2023819-22138-atuvdjoyd6s.jpg"
+                alt="Товар 8"
+              />
+              <h5 class="card-title">Товар 8</h5>
+              <p class="card-text">Археологическая экспедиция</p>
+              <input type="hidden" name="vendor_code" value="8888" />
+              <p class="card-text">
+                Заказать
+                <input class="w-50" type="number" name="amount" value="0" />
+              </p>
+            </li>
+
+            <li
+              style="width: 210px"
+              class="d-flex flex-column m-1 p-1 border bg-body"
+            >
+              <img
+                style="width: 180px"
+                class="align-self-center"
+                src="images/700226d13b56ab5f2f0330a17a7ee485_XL.jpg"
+                alt="Товар 9"
+              />
+              <h5 class="card-title">Товар 9</h5>
+              <p class="card-text">Велотур</p>
+              <input type="hidden" name="vendor_code" value="9999" />
+              <p class="card-text">
+                Заказать
+                <input class="w-50" type="number" name="amount" value="0" />
+              </p>
+            </li>
+          </ul>
+          <input class="customButton" type="submit" value="В корзину" />
+        </form>
+      </div>
+    </div>
+
+    <script src="js/shop.js"></script>
+  </body>
+</html>
